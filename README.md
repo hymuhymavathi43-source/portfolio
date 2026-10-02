@@ -6,7 +6,7 @@
 
 A clean, responsive portfolio showcasing my education, technical skills, and projects.
 
-**[View the portfolio](index.html)**
+To view the portfolio, open `index.html` in a web browser.
 
 </div>
 
