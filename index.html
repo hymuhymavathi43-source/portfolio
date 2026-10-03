@@ -3,38 +3,281 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of E Hymavathi, aspiring software developer and Computer Science Engineering student.">
+  <meta name="description" content="Portfolio of E Hymavathi, Computer Science Engineering student.">
   <title>E Hymavathi | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="preview-toolbar">
+    <span class="preview-label">Preview</span>
+    <div class="preview-options" role="group" aria-label="Choose preview size">
+      <button class="preview-mode" type="button" data-preview-mode="desktop" aria-pressed="false">Desktop</button>
+      <button class="preview-mode" type="button" data-preview-mode="mobile" aria-pressed="false">Mobile</button>
+    </div>
+  </div>
+  <div class="preview-stage">
+    <div class="portfolio-frame" id="portfolio-frame" data-preview-mode="responsive">
   <header class="site-header">
     <nav class="navbar" aria-label="Primary navigation">
       <a class="brand" href="#home">E Hymavathi</a>
       <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-menu">Menu</button>
+      <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
       <ul id="primary-menu" class="nav-links">
-        <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#education">Education</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#internships">Internships</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section id="home" class="hero" aria-labelledby="home-title">
-      <div class="hero-copy"><p class="eyebrow">Hello, I am</p><h1 id="home-title">E Hymavathi</h1><p class="hero-title">Computer Science Engineering Student</p><p class="hero-intro">A Computer Science Engineering student focused on building a strong foundation in software development and problem solving through academic learning and project work.</p><div class="hero-actions"><a class="button button-primary" href="#projects">View My Projects</a><a class="button button-secondary" href="#contact">Contact Me</a></div><ul class="social-links"><li><a href="https://www.linkedin.com/in/e-hymavathi-a6731b340" target="_blank" rel="noopener noreferrer">LinkedIn</a></li><li><a href="https://github.com/hymuhymavathi43-source" target="_blank" rel="noopener noreferrer">GitHub</a></li></ul></div>
-      <div class="profile-image-wrap"><img src="profile.jpg" alt="E Hymavathi"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Hello, I am</p>
+        <h1 id="home-title">E Hymavathi</h1>
+        <p class="hero-title">Computer Science Engineering Student</p>
+        <p class="hero-intro">Computer Science Engineering student interested in building practical software solutions and growing as a developer through academic projects and internships.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">View My Projects</a>
+          <a class="button button-secondary" href="#contact">Contact Me</a>
+        </div>
+        <ul class="social-links" aria-label="Professional profiles">
+          <li><a href="https://www.linkedin.com/in/e-hymavathi-a6731b340" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/hymuhymavathi43-source" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </div>
+      <div class="profile-image-wrap">
+        <img src="profile.jpg" alt="E Hymavathi">
+      </div>
     </section>
 
-    <section id="about" class="section" aria-labelledby="about-title"><div class="section-heading"><p class="eyebrow">Profile</p><h2 id="about-title">About Me</h2></div><p class="section-text">I am a Computer Science Engineering student with a strong interest in software development. I enjoy working with Java, Python, web development, and machine learning concepts while strengthening my problem-solving skills. Through academic projects and continuous learning, I aim to build practical solutions with real-world impact.</p></section>
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="eyebrow">Profile</p>
+        <h2 id="about-title">About Me</h2>
+      </div>
+      <p class="section-text">I am a Computer Science Engineering student with an interest in software development. I enjoy working with Java, Python, web development, and machine learning while building my problem-solving skills. Through internships and academic projects, I have gained experience applying technical knowledge to practical work.</p>
+    </section>
 
-    <section id="education" class="section section-alt" aria-labelledby="education-title"><div class="section-heading"><p class="eyebrow">Academic background</p><h2 id="education-title">Education</h2></div><div class="education-grid"><article class="education-card current"><div class="edu-period">2023 - 2027</div><h3>B.E. Computer Science and Engineering</h3><p class="edu-school">Stanley College of Engineering and Technology for Women, Osmania University</p><p class="edu-score">CGPA: 8.93</p></article><article class="education-card"><div class="edu-period">2021 - 2023</div><h3>Intermediate (MPC)</h3><p class="edu-school">Mahatma Jyothiba Phule Backward Classes Welfare Residential Junior College</p><p class="edu-score">Percentage: 94.5%</p></article><article class="education-card"><div class="edu-period">2019 - 2021</div><h3>SSC</h3><p class="edu-school">Saraswathi Vidyanikethan High School</p><p class="edu-score">CGPA: 10.0</p></article></div></section>
+    <section id="education" class="section section-alt" aria-labelledby="education-title">
+      <div class="section-heading">
+        <p class="eyebrow">Academic background</p>
+        <h2 id="education-title">Education</h2>
+      </div>
+      <div class="table-wrap table-responsive">
+        <table class="table table-striped table-hover align-middle">
+          <thead>
+            <tr>
+              <th scope="col">Qualification</th>
+              <th scope="col">Institution</th>
+              <th scope="col">University / Board</th>
+              <th scope="col">Year</th>
+              <th scope="col">Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">B.E. Computer Science and Engineering</th>
+              <td>Stanley College of Engineering and Technology for Women</td>
+              <td>Osmania University</td>
+              <td>2027</td>
+              <td>CGPA 8.93</td>
+            </tr>
+            <tr>
+              <th scope="row">Intermediate (MPC)</th>
+              <td>Mahatma Jyothiba Phule Backward Classes Welfare Residential Junior College</td>
+              <td>Board of Intermediate Education</td>
+              <td>2023</td>
+              <td>94.5%</td>
+            </tr>
+            <tr>
+              <th scope="row">SSC</th>
+              <td>Saraswathi Vidyanikethan High School</td>
+              <td>Board of Secondary Education</td>
+              <td>2021</td>
+              <td>10.0 CGPA</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-    <section id="skills" class="section" aria-labelledby="skills-title"><div class="section-heading"><p class="eyebrow">Capabilities</p><h2 id="skills-title">Skills</h2></div><div class="skills-list"><article class="skill-group"><h3>Programming</h3><ul><li>C</li><li>Java</li><li>Python</li></ul></article><article class="skill-group"><h3>Web</h3><ul><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul></article><article class="skill-group"><h3>Computer Science</h3><ul><li>Data Structures</li><li>Algorithms</li><li>OOP</li><li>DBMS</li></ul></article><article class="skill-group"><h3>AI/ML</h3><ul><li>Machine Learning</li><li>Data Analysis</li><li>TF-IDF</li><li>Cosine Similarity</li></ul></article><article class="skill-group"><h3>Tools</h3><ul><li>GitHub</li><li>Google Colab</li><li>VS Code</li></ul></article></div></section>
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="section-heading">
+        <p class="eyebrow">Capabilities</p>
+        <h2 id="skills-title">Skills</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card skill-group">
+          <h3>Programming</h3>
+          <ul><li>C</li><li>Java</li><li>Python</li></ul>
+        </article>
+        <article class="card skill-group">
+          <h3>Web</h3>
+          <ul><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+        </article>
+        <article class="card skill-group">
+          <h3>Computer Science</h3>
+          <ul><li>Data Structures</li><li>Algorithms</li><li>OOP</li><li>DBMS</li></ul>
+        </article>
+        <article class="card skill-group">
+          <h3>AI/ML</h3>
+          <ul><li>Machine Learning</li><li>Data Analysis</li><li>TF-IDF</li><li>Cosine Similarity</li></ul>
+        </article>
+        <article class="card skill-group">
+          <h3>Tools</h3>
+          <ul><li>GitHub</li><li>Google Colab</li><li>VS Code</li></ul>
+        </article>
+        <article class="card skill-group">
+          <h3>Other</h3>
+          <ul><li>MS Word</li><li>PowerPoint</li><li>Excel</li></ul>
+        </article>
+        <article class="card skill-group">
+          <h3>Soft Skills</h3>
+          <ul><li>Communication</li><li>Time Management</li><li>Teamwork</li><li>Adaptability</li><li>Leadership</li><li>Problem Solving</li></ul>
+        </article>
+      </div>
+    </section>
 
-    <section id="projects" class="section section-alt" aria-labelledby="projects-title"><div class="section-heading"><p class="eyebrow">Selected work</p><h2 id="projects-title">Projects</h2></div><div class="card-grid"><article class="card"><h3>Music Recommendation System</h3><h4>Technologies</h4><p>Python, Pandas, Machine Learning, TF-IDF, Cosine Similarity</p></article><article class="card"><h3>AI-Based Crop Recommendation System</h3><h4>Technologies</h4><p>HTML, CSS, JavaScript, AI Concepts, VS Code</p></article></div></section>
+    <section id="certifications" class="section section-alt" aria-labelledby="certifications-title">
+      <div class="section-heading">
+        <p class="eyebrow">Learning milestones</p>
+        <h2 id="certifications-title">Certifications</h2>
+      </div>
+      <div class="card-grid certification-grid">
+        <article class="card">
+          <h3>Great Learning Academy</h3>
+          <ul class="certification-list"><li>Data Structures in C</li><li>Design Thinking in C</li></ul>
+        </article>
+        <article class="card">
+          <h3>Infosys Springboard</h3>
+          <ul class="certification-list"><li>Business Communication</li><li>Python for Data Science</li><li>Design Thinking</li></ul>
+        </article>
+        <article class="card">
+          <h3>CDAC</h3>
+          <ul class="certification-list"><li>One Month Course on Quantum Computing</li></ul>
+        </article>
+        <article class="card">
+          <h3>Udemy</h3>
+          <ul class="certification-list"><li>Basics of R Software for Data Science</li><li>Introduction to R Programming</li></ul>
+        </article>
+        <article class="card">
+          <h3>HP LIFE</h3>
+          <ul class="certification-list"><li>Data Science and Analytics</li><li>AI for Beginners</li></ul>
+        </article>
+        <article class="card">
+          <h3>Kaggle</h3>
+          <ul class="certification-list"><li>Introduction to Machine Learning</li><li>Intermediate Machine Learning</li><li>Feature Engineering</li></ul>
+        </article>
+      </div>
+    </section>
 
-    <section id="contact" class="section section-alt" aria-labelledby="contact-title"><div class="section-heading"><p class="eyebrow">Get in touch</p><h2 id="contact-title">Contact</h2></div><div class="contact-layout"><address><p><strong>Email:</strong> <a href="mailto:hymuhymavathi43@gmail.com">hymuhymavathi43@gmail.com</a></p><p><strong>Phone:</strong> <a href="tel:6305655607">6305655607</a></p><p><strong>Location:</strong> Jogulamba Gadwal, Telangana, India</p><p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/e-hymavathi-a6731b340" target="_blank" rel="noopener noreferrer">View profile</a></p><p><strong>GitHub:</strong> <a href="https://github.com/hymuhymavathi43-source" target="_blank" rel="noopener noreferrer">View profile</a></p></address><form class="contact-form" action="#" method="post"><div><label for="full-name">Full Name</label><input id="full-name" name="full-name" type="text" required></div><div><label for="email">Email</label><input id="email" name="email" type="email" required></div><div><label for="subject">Subject</label><input id="subject" name="subject" type="text" required></div><div><label for="message">Message</label><textarea id="message" name="message" rows="6" required></textarea></div><button class="button button-primary" type="submit">Submit</button><p class="form-message" role="status" aria-live="polite" hidden></p></form></div></section>
+    <section id="internships" class="section" aria-labelledby="internships-title">
+      <div class="section-heading">
+        <p class="eyebrow">Experience</p>
+        <h2 id="internships-title">Internships</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Data Mining and Machine Learning Intern</h3>
+          <p class="organization">Stanley College of Engineering and Technology for Women</p>
+          <p>Duration: 6 Weeks</p>
+          <ul><li>Data preprocessing</li><li>Model training</li><li>Performance evaluation</li><li>Python and Scikit-learn</li><li>Developed Music Recommendation System</li></ul>
+        </article>
+        <article class="card">
+          <h3>Java Development Intern</h3>
+          <p class="organization">Cognifyz Technologies</p>
+          <p>Duration: 1 Month</p>
+          <ul><li>Java-based solutions</li><li>OOP</li><li>Exception handling</li><li>Collections</li><li>Problem solving and debugging</li></ul>
+        </article>
+        <article class="card">
+          <h3>AI &amp; Cyber Security Intern</h3>
+          <p class="organization">Indian Servers Private Limited</p>
+          <p>Duration: 2 Months</p>
+          <ul><li>Structured learning sessions</li><li>Practical assignments</li><li>Project-based activities</li><li>Real-world technology concepts</li><li>Problem solving</li><li>Analytical thinking</li><li>Teamwork</li><li>Professional communication</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-alt" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <p class="eyebrow">Selected work</p>
+        <h2 id="projects-title">Projects</h2>
+      </div>
+      <div class="project-filters" role="group" aria-label="Filter projects by category">
+        <button class="btn btn-outline-primary active" type="button" data-filter="all" aria-pressed="true">All projects</button>
+        <button class="btn btn-outline-primary" type="button" data-filter="ai-data" aria-pressed="false">AI &amp; Data</button>
+        <button class="btn btn-outline-primary" type="button" data-filter="web" aria-pressed="false">Web</button>
+      </div>
+      <p class="filter-status" aria-live="polite"></p>
+      <div class="card-grid">
+        <article class="card project-card" data-category="ai-data">
+          <h3>Music Recommendation System</h3>
+          <ul><li>Content-based recommendation system</li><li>TF-IDF Vectorization</li><li>Cosine Similarity</li><li>Spotify dataset</li><li>Python and Pandas</li><li>Machine Learning</li></ul>
+        </article>
+        <article class="card project-card" data-category="web ai-data">
+          <h3>AI-Based Crop Recommendation System</h3>
+          <ul><li>AI-powered web application</li><li>Crop recommendation</li><li>Soil analysis</li><li>Fertilizer recommendation</li><li>Weather dashboard</li><li>Plant disease detection</li><li>AI chatbot</li></ul>
+          <h4>Technologies</h4>
+          <p>HTML, CSS, JavaScript, AI Concepts, VS Code</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt" aria-labelledby="contact-title">
+      <div class="section-heading">
+        <p class="eyebrow">Get in touch</p>
+        <h2 id="contact-title">Contact</h2>
+      </div>
+      <div class="contact-layout">
+        <address>
+          <p><strong>Email:</strong> <a href="mailto:hymuhymavathi43@gmail.com">hymuhymavathi43@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:6305655607">6305655607</a></p>
+          <p><strong>Location:</strong> Jogulamba Gadwal, Telangana, India</p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/e-hymavathi-a6731b340" target="_blank" rel="noopener noreferrer">View profile</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/hymuhymavathi43-source" target="_blank" rel="noopener noreferrer">View profile</a></p>
+        </address>
+        <form class="contact-form" action="#" method="post" novalidate>
+          <div>
+            <label for="full-name">Full Name</label>
+            <input class="form-control" id="full-name" name="full-name" type="text" autocomplete="name" aria-describedby="full-name-error" required>
+            <div class="invalid-feedback" id="full-name-error">Please enter your name.</div>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input class="form-control" id="email" name="email" type="email" autocomplete="email" aria-describedby="email-error" required>
+            <div class="invalid-feedback" id="email-error">Please enter a valid email address.</div>
+          </div>
+          <div>
+            <label for="subject">Subject</label>
+            <input class="form-control" id="subject" name="subject" type="text" aria-describedby="subject-error" required>
+            <div class="invalid-feedback" id="subject-error">Please enter a subject.</div>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="6" aria-describedby="message-error" required></textarea>
+            <div class="invalid-feedback" id="message-error">Please enter a message.</div>
+          </div>
+          <button class="button button-primary btn btn-primary" type="submit">Submit</button>
+          <p class="form-message alert" role="status" aria-live="polite" hidden></p>
+        </form>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer"><p>E Hymavathi</p><p>&copy; 2026 E Hymavathi. All Rights Reserved.</p></footer>
+
+  <footer class="site-footer">
+    <p>E Hymavathi</p>
+    <p>&copy; 2026 E Hymavathi. All Rights Reserved.</p>
+  </footer>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
